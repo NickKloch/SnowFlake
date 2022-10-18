@@ -15,6 +15,12 @@ public:
     QSnowflake(QWidget *parent = nullptr);
     ~QSnowflake();
 
+private slots:
+
+    void on_GetFileBtn_clicked();
+
+    void on_GetKeyBtn_clicked();
+
 private:
     Ui::QSnowflake *ui;
 };

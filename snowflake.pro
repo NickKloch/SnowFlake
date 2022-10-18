@@ -13,7 +13,7 @@ SOURCES += \
     qsnowflake.cpp
 
 HEADERS += \
-    mainwindow.h
+    qsnowflake.h
 
 FORMS += \
     qsnowflake.ui
