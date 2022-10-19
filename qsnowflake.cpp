@@ -26,7 +26,7 @@ void QSnowflake::on_GetFileBtn_clicked()
     }
     else if(!filePath.endsWith(".txt"))
     {
-        QMessageBox::critical(this,"Ошибка","Выбран не тестовый файл");
+        QMessageBox::critical(this,"Ошибка","Выбран не текстовый файл");
         return;
     }
 }
@@ -42,7 +42,7 @@ void QSnowflake::on_GetKeyBtn_clicked()
     }
     else if(!keyPath.endsWith(".txt"))
     {
-        QMessageBox::critical(this,"Ошибка","Выбран не тестовый файл");
+        QMessageBox::critical(this,"Ошибка","Выбран не текстовый файл");
         return;
     }
 }
