@@ -28,6 +28,5 @@ private slots:
 
 private:
     Ui::QSnowflake *ui;
-    QStandardItemModel* modle;
 };
 #endif // QSNOWFLAKE_H
