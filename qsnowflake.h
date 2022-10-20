@@ -2,6 +2,7 @@
 #define QSNOWFLAKE_H
 
 #include <QMainWindow>
+#include <QStandardItemModel>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class QSnowflake; }
@@ -21,7 +22,12 @@ private slots:
 
     void on_GetKeyBtn_clicked();
 
+    void on_startBtn_clicked();
+
+    void on_cancelBtn_clicked();
+
 private:
     Ui::QSnowflake *ui;
+    QStandardItemModel* modle;
 };
 #endif // QSNOWFLAKE_H

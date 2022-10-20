@@ -8,13 +8,17 @@ QSnowflake::QSnowflake(QWidget *parent)
     , ui(new Ui::QSnowflake)
 {
     ui->setupUi(this);
+
+    modle = new QStandardItemModel(2,3,this);
+    modle->setHorizontalHeaderLabels(QStringList() << "Адрес" << "Имя" << "Значение");
+
+    ui->tableView_m->setModel(modle);
 }
 
 QSnowflake::~QSnowflake()
 {
     delete ui;
 }
-
 
 void QSnowflake::on_GetFileBtn_clicked()
 {
@@ -47,3 +51,12 @@ void QSnowflake::on_GetKeyBtn_clicked()
     }
 }
 
+void QSnowflake::on_startBtn_clicked()
+{
+
+}
+
+void QSnowflake::on_cancelBtn_clicked()
+{
+
+}

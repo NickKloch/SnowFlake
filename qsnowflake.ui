@@ -238,16 +238,6 @@
      <string>Сегмент кода</string>
     </property>
    </widget>
-   <widget class="QTableWidget" name="table_m">
-    <property name="geometry">
-     <rect>
-      <x>840</x>
-      <y>20</y>
-      <width>391</width>
-      <height>91</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QTableWidget" name="table_a">
     <property name="geometry">
      <rect>
@@ -340,6 +330,16 @@
      <string>Результат выполнения программы</string>
     </property>
    </widget>
+   <widget class="QTableView" name="tableView_m">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>20</y>
+      <width>391</width>
+      <height>91</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -347,7 +347,7 @@
      <x>0</x>
      <y>0</y>
      <width>1249</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
