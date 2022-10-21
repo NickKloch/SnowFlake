@@ -36,6 +36,8 @@ public:
     int get_i();
     // метод возвращающий m
     int get_m();
+    // метод возвращающий m
+    int* get_pm();
     // метод возвращающий r_dlina
     int get_r_dlina();
     // метод возвращающий i1

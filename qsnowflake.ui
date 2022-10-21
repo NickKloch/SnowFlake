@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1249</width>
-    <height>662</height>
+    <height>692</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>450</y>
+      <y>480</y>
       <width>150</width>
       <height>60</height>
      </rect>
@@ -31,7 +31,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>550</y>
+      <y>580</y>
       <width>150</width>
       <height>60</height>
      </rect>
@@ -209,7 +209,7 @@
     <property name="geometry">
      <rect>
       <x>170</x>
-      <y>450</y>
+      <y>480</y>
       <width>861</width>
       <height>161</height>
      </rect>
@@ -221,7 +221,7 @@
       <x>220</x>
       <y>20</y>
       <width>601</width>
-      <height>401</height>
+      <height>441</height>
      </rect>
     </property>
    </widget>
@@ -238,33 +238,13 @@
      <string>Сегмент кода</string>
     </property>
    </widget>
-   <widget class="QTableWidget" name="table_ats">
-    <property name="geometry">
-     <rect>
-      <x>840</x>
-      <y>200</y>
-      <width>391</width>
-      <height>31</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QTableWidget" name="table_adlina">
-    <property name="geometry">
-     <rect>
-      <x>840</x>
-      <y>230</y>
-      <width>391</width>
-      <height>51</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QTableWidget" name="table_b">
     <property name="geometry">
      <rect>
       <x>840</x>
-      <y>280</y>
+      <y>290</y>
       <width>391</width>
-      <height>141</height>
+      <height>171</height>
      </rect>
     </property>
    </widget>
@@ -285,7 +265,7 @@
     <property name="geometry">
      <rect>
       <x>1050</x>
-      <y>450</y>
+      <y>480</y>
       <width>181</width>
       <height>71</height>
      </rect>
@@ -298,7 +278,7 @@
     <property name="geometry">
      <rect>
       <x>1050</x>
-      <y>540</y>
+      <y>570</y>
       <width>181</width>
       <height>71</height>
      </rect>
@@ -311,7 +291,7 @@
     <property name="geometry">
      <rect>
       <x>490</x>
-      <y>430</y>
+      <y>460</y>
       <width>251</width>
       <height>17</height>
      </rect>
@@ -340,6 +320,26 @@
      </rect>
     </property>
    </widget>
+   <widget class="QTableWidget" name="tableWidget_aTs">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>200</y>
+      <width>391</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_dlina">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>230</y>
+      <width>391</width>
+      <height>61</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -347,7 +347,7 @@
      <x>0</x>
      <y>0</y>
      <width>1249</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

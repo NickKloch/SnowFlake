@@ -10,6 +10,11 @@ int QSourceProg::get_m()
     return m;
 }
 
+int* QSourceProg::get_pm()
+{
+    return &m;
+}
+
 int QSourceProg::get_r_dlina()
 {
     return r_dlina;
