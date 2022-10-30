@@ -15,9 +15,36 @@ int* QSourceProg::get_pm()
     return &m;
 }
 
+int* QSourceProg::get_pi()
+{
+    return &i;
+}
+
+int QSourceProg::get_aKolvots()
+{
+    return a.kolvots;
+}
+int* QSourceProg::get_paKolvots()
+{
+    return &a.kolvots;
+}
+int QSourceProg::get_adlina()
+{
+    return a.dlina;
+}
+int* QSourceProg::get_padlina()
+{
+    return &a.dlina;
+}
+
 int QSourceProg::get_r_dlina()
 {
     return r_dlina;
+}
+
+int* QSourceProg::get_r_pdlina()
+{
+    return &r_dlina;
 }
 
 int QSourceProg::get_i1()
@@ -25,14 +52,29 @@ int QSourceProg::get_i1()
     return i1;
 }
 
+int* QSourceProg::get_pi1()
+{
+    return &i1;
+}
+
 int QSourceProg::get_j()
 {
     return j;
 }
 
+int* QSourceProg::get_pj()
+{
+    return &j;
+}
+
 GEN_PSP QSourceProg::get_a()
 {
     return a;
+}
+
+PGEN_PSP QSourceProg::get_pa()
+{
+    return &a;
 }
 
 char* QSourceProg::get_b()
@@ -76,3 +118,7 @@ void QSourceProg::set_aKolvots(int newKolvots)
     a.kolvots = newKolvots;
 }
 
+char* QSourceProg::get_aTs()
+{
+    return a.ts;
+}
