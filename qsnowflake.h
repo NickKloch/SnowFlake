@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QStandardItemModel>
+#include "QSourceProg.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class QSnowflake; }
@@ -28,5 +29,16 @@ private slots:
 
 private:
     Ui::QSnowflake *ui;
+
+    char* pBuf;
+    QSourceProg prog;
+    QString getLog(QString log);
+
+    std::vector <void*> listData;
+    void createListData();
+    std::vector <void*> getListData();
+
+    void UpdateData();
+    void getData();
 };
 #endif // QSNOWFLAKE_H

@@ -11,14 +11,14 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>QSnowflake</string>
+   <string>Снежинка</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="GetFileBtn">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>560</y>
+      <y>660</y>
       <width>150</width>
       <height>60</height>
      </rect>
@@ -31,7 +31,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>660</y>
+      <y>560</y>
       <width>150</width>
       <height>60</height>
      </rect>
@@ -205,7 +205,7 @@
      <string>0</string>
     </property>
    </widget>
-   <widget class="QTextBrowser" name="restBrowser">
+   <widget class="QTextBrowser" name="textBrowser">
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -215,20 +215,10 @@
      </rect>
     </property>
    </widget>
-   <widget class="QTableWidget" name="tableCode">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>20</y>
-      <width>601</width>
-      <height>511</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>460</x>
+      <x>500</x>
       <y>0</y>
       <width>101</width>
       <height>17</height>
@@ -337,6 +327,16 @@
       <y>310</y>
       <width>391</width>
       <height>221</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidgetCode">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>20</y>
+      <width>611</width>
+      <height>511</height>
      </rect>
     </property>
    </widget>

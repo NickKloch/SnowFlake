@@ -1,3 +1,6 @@
+#include <QFileDialog>
+#include <stdio.h>
+
 #ifndef QSOURCEPROG_H
 #define QSOURCEPROG_H
 
@@ -6,12 +9,14 @@
 //структура для описания генератора гаммы
 typedef struct GEN_PSP
 {
-    //регистр сдвига (максимальная длина 201 ячейка) char ts[201];//номера точек съема
-    char ts[201];
+    //регистр сдвига (максимальная длина 201 ячейка)
+    char ww[16];
+    //номера точек съема
+    char ts[16];
     //количество точек съема
-    int kolvots;
+    int kolvots = 0;
     //длина регистра сдвига
-    int dlina;
+    int dlina = 0;
 } GEP_PSP,*PGEN_PSP;
 
 class QSourceProg
@@ -24,12 +29,14 @@ private:
     //i и i1 - счетчики циклов,
     int i = 0;
     int i1 = 0;
-    //j - вес очередного разряда, который нужен, чтобы сформировать байт гаммы
-    int j = 0;
     // Генератор гаммы
     GEN_PSP a;
     //массив для работы с текстом (сначала в него текст читается из файла, потом в нем же текст преобразуется)
     char b[10000];
+
+    //j - вес очередного разряда, который нужен, чтобы сформировать байт гаммы
+    int j = 0;
+    FILE *kl,*te,*te1;
 
 public:
     // метод возвращающий i
@@ -63,6 +70,7 @@ public:
     int* get_padlina();
     // метод возвращающий b
     char* get_b();
+
     // метод устанавливающий i
     void set_i(int iNewi);
     // метод устанавливающий m
@@ -81,5 +89,18 @@ public:
     void set_ww(int newWw);
     // метод устанавливающий b
     void set_b();
+    // Установка файла ключа
+    bool setKeyData(const char* keyName);
+    // Установка текстового файла
+    bool setFileData(const char* fileName);
+    // Получение дескриптора файла ключа
+    FILE* getKeyHandler();
+    // Получение дескриптора файла с текстом
+    FILE* getDataHandler();
+    // Алгоритм шиифрования программы
+    void crypt(std::vector <void*> listData);
+    void writeDataFile();
+    void start();
+
 };
 
